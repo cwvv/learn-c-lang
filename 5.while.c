@@ -2,7 +2,7 @@
 
 int main(void)
 {
-  int input,n;
+  int input, n;
 
   printf("자연수를 입력하세요\n");
   scanf("%d", &input);

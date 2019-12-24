@@ -11,7 +11,6 @@ int main(void)
     printf("딩동댕.\n");
   } else {
     printf("땡.\n");
-
   }
   return 0;
 }
