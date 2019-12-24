@@ -7,9 +7,9 @@ int main(void)
   char str2[10];
   char str3[] = "Hia";
   char *str4;
-  char str5[100] = "https://google.co.uk"
+  char str5[100] = "https://google.co.uk";
   char *str6;
-  char str7[10] = "google"
+  char str7[10] = "co";
 
   int length = strlen(string);
   printf("strlen: %d\n", length);
@@ -25,7 +25,7 @@ int main(void)
   str4 = strchr(string, 'i');
   printf("%s\n", str4);
 
-  str6 = strstr(str5, str7)
+  str6 = strstr(str5, str7);
   printf("%s\n", str6);
   return 0;
 }
