@@ -2,6 +2,7 @@
 
 int main(void)
 {
-    printf("Hello C\n");
+    printf("Hello %c\n", 'n');
+    puts("Hello C");
     return 0;
 }
