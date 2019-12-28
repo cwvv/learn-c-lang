@@ -12,7 +12,6 @@ int main(void) {
 	int a, b;
 
 	a = 0;
-	b = 0;
 	while (a < 5) {
 			b = 0;
 			while (b < 4) {
