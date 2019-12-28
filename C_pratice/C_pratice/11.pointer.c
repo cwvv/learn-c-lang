@@ -7,19 +7,19 @@ void draw_line(int length) {
         printf("_");
         n++;
     }
-        printf("\n");
+    printf("\n");
 }
 
 int main(void) {
-    int a, b;
+    int draw_line_number;
 
-    printf("안녕하세요?\n");
-    scanf("%d", &a);
-    draw_line(a);
+    printf("몇 개 그을까요?\n");
+    scanf("%d", &draw_line_number);
+    draw_line(draw_line_number);
 
-    printf("반갑습니다.\n");
-    scanf("%d", &b);
-    draw_line(b);
+    printf("몇 개 그을까요?.\n");
+    scanf("%d", &draw_line_number);
+    draw_line(draw_line_number);
 
     return 0;
 }
