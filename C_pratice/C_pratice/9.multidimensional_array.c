@@ -17,7 +17,7 @@ int main(void) {
 			b = 0;
 			while (b < 4) {
 				printf("%d층 %d호에는 %d명 살아요.\n", a + 1, b + 1, data[a][b]);
-			b++;
+				b++;
 			}
 			printf("\n");
 			a++;
