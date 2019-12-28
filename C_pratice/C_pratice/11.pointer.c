@@ -11,15 +11,15 @@ void draw_line(int length) {
 }
 
 int main(void) {
-    int draw_line_number;
+    int length;
 
     printf("몇 개 그을까요?\n");
-    scanf("%d", &draw_line_number);
-    draw_line(draw_line_number);
+    scanf("%d", &length);
+    draw_line(length);
 
     printf("몇 개 그을까요?.\n");
-    scanf("%d", &draw_line_number);
-    draw_line(draw_line_number);
+    scanf("%d", &length);
+    draw_line(length);
 
     return 0;
 }
