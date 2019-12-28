@@ -3,10 +3,11 @@
 
 void draw_line(int length) {
     int n = 0;
-    while ( length > n ) {
-        printf("_____________");
+    while (length > n) {
+        printf("_");
         n++;
     }
+        printf("\n");
 }
 
 int main(void) {
@@ -16,7 +17,7 @@ int main(void) {
     scanf("%d", &a);
     draw_line(a);
 
-    printf("\n¹Ý°©½À´Ï´Ù.\n");
+    printf("¹Ý°©½À´Ï´Ù.\n");
     scanf("%d", &b);
     draw_line(b);
 
