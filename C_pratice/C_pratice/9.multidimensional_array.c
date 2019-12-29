@@ -9,13 +9,16 @@ int main(void) {
 		{ 6, 8, 3, 9  },
 	};
 
-	int a, b;
+	int a, b, column, row;
+
+	row = sizeof(data[0]) / sizeof(data[0][0]);											//	4 = 16 / 4 [one row byte / element byte]
+	column = sizeof(data) / sizeof(data[0]);											//	5 = 80 / 16 [all byte / one row byte]
 
 	a = 0;
-	while (a < 5) {
+	while (a < column) {																
 			b = 0;
-			while (b < 4) {
-				printf("%d층 %d호에는 %d명 살아요.\n", a + 1, b + 1, data[a][b]);
+			while (b < row) {															
+				printf("%dlayer %dnumber in %dpeople.\n", a + 1, b + 1, data[a][b]);
 				b++;
 			}
 			printf("\n");
