@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 
@@ -27,5 +28,6 @@ int main(void)
 
   str6 = strstr(str5, str7);
   printf("%s\n", str6);
+
   return 0;
 }

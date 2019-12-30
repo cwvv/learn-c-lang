@@ -7,7 +7,7 @@ int main(void)
     1, 9, 7, 4, 0, 9, 99
   };
 
-  length = sizeof(array) / sizeof(array[0]);
+  length = sizeof(array) / sizeof(array[0]);      // 7 = 28 / 4
   n = 0;
 
   while (n < length) {
