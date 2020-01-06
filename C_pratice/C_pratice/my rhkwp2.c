@@ -22,8 +22,6 @@ int main(void) {
 		n++;
 	}
 
-	printf("%s\n", str2);
-
 	if (strcmp(str1, str2) == 0) {
 		printf("same");
 	} else {
