@@ -5,22 +5,27 @@
 //앞뒤가 똑같은지 구별하기
 
 int sd(char x) {
-	char str[200];
-	int i = strlen(str) - 1;
+	char y[200] = { x };
+	int i;
+
+	i = strlen(x) - 1;
 
 	while ( i >= 0 ) {
-		printf("%c", str[i]);
+		printf("%c", y[i]);
 		i--;
 	}
 }
 
 int main(void) {
 	char str[200];
+	char str2[200] = { '\0' };
 	
 	printf("in word\n");
 	scanf("%s", str);
 
-	if (strcmp(str, sd(str)) == 0) {
+	strcpy(str2, sd(str));
+
+	if (strcmp(str, str2) == 0) {
 		printf("same");
 	} else {
 		printf("different");
