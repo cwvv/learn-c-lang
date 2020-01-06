@@ -14,13 +14,15 @@ int main(void) {
 	int i, n, m;
 
 	i = strlen(str1);
-	m = strlen(str1) - 1;
+	m = i - 1;
 
 	n = 0;
 	while (n < i) {
-		str2[n] = str2[m - n];
+		str2[n] = str1[m - n];
 		n++;
 	}
+
+	printf("%s\n", str2);
 
 	if (strcmp(str1, str2) == 0) {
 		printf("same");
