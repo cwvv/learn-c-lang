@@ -4,7 +4,7 @@
 
 //앞뒤가 똑같은지 구별하기
 
-int sd(char x) {
+int invert_string(char x) {
 	char y[200] = { x };
 	int i;
 
@@ -23,7 +23,7 @@ int main(void) {
 	printf("in word\n");
 	scanf("%s", str);
 
-	strcpy(str2, sd(str));
+	strcpy(str2, invert_string(str));
 
 	if (strcmp(str, str2) == 0) {
 		printf("same");
