@@ -2,16 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 
-//앞뒤가 똑같은지 구별하기
-
-int invert_string(char x) {
-	char y[200] = { x };
+void invert_string(char x[]) {
 	int i;
 
 	i = strlen(x) - 1;
 
 	while ( i >= 0 ) {
-		printf("%c", y[i]);
+		printf("%c", x[i]);
 		i--;
 	}
 }
